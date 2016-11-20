@@ -9,7 +9,7 @@ import java.util.List;
  */
 
 public interface ICityListView {
-    void displayCities(List<City> cityList);
+    void addDataToAdapter(List<City> list);
 
     void showProgress();
 

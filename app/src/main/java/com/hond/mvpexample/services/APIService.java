@@ -2,8 +2,6 @@ package com.hond.mvpexample.services;
 
 import com.hond.mvpexample.beans.Weather;
 
-import java.util.List;
-
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
@@ -11,7 +9,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
-import retrofit2.http.Query;
 import rx.Observable;
 
 
@@ -37,7 +34,7 @@ public class APIService {
         return mExecuteApi;
     }
 
-    public interface ExecuteApi {
+    interface ExecuteApi {
         @Headers({
                 "Accept:application/json"
         })

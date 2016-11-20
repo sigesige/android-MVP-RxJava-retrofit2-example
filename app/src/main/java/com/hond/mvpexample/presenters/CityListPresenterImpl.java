@@ -14,8 +14,8 @@ import java.util.List;
  */
 
 public class CityListPresenterImpl implements ICityListPresenter {
-    ICityListView mCityListView;
-    ICityModel mCityModel;
+    private ICityListView mCityListView;
+    private ICityModel mCityModel;
 
     public CityListPresenterImpl(ICityListView iCityListView) {
         this.mCityListView = iCityListView;
@@ -38,7 +38,7 @@ public class CityListPresenterImpl implements ICityListPresenter {
         if (mCityListView != null) {
             mCityListView.hideProgress();
         }
-        mCityListView.displayCities(cityList);
+        mCityListView.addDataToAdapter(cityList);
     }
 
     @Override

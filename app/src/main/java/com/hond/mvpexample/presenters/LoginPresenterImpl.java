@@ -10,7 +10,7 @@ import com.hond.mvpexample.views.ILoginView;
 
 public class LoginPresenterImpl implements ILoginPresenter {
 
-    ILoginView mLoginView;
+    private ILoginView mLoginView;
 
     public LoginPresenterImpl(ILoginView loginView) {
         this.mLoginView = loginView;
