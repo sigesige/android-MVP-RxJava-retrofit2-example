@@ -4,7 +4,7 @@ package com.hond.mvpexample.presenters;
  * Created by hond on 11/18/2016.
  */
 
-interface IWeatherPresenter {
+public interface IWeatherPresenter {
     void loadWeather();
 
     void onDestroy();

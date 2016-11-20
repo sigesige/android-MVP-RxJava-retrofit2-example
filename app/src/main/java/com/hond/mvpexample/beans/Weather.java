@@ -15,7 +15,7 @@ public class Weather {
         this.weatherinfo = weatherinfo;
     }
 
-    private static class WeatherinfoBean {
+    public static class WeatherinfoBean {
         public String city;
         public String cityid;
         public String temp;

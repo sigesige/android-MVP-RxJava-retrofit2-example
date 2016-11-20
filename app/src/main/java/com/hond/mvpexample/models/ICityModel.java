@@ -8,6 +8,6 @@ import java.util.List;
  * Created by hond on 11/18/2016.
  */
 
-interface ICityModel {
+public interface ICityModel {
     List<City> getCityIdList();
 }

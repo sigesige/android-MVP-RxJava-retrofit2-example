@@ -34,7 +34,7 @@ public class APIService {
         return mExecuteApi;
     }
 
-    interface ExecuteApi {
+    public interface ExecuteApi {
         @Headers({
                 "Accept:application/json"
         })
