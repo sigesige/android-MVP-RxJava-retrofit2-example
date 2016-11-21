@@ -13,8 +13,8 @@ import rx.schedulers.Schedulers;
  */
 
 public class WeatherPresenterImpl implements IWeatherPresenter {
-    IWeatherView mWeatherView;
-    APIService mApiService;
+    private IWeatherView mWeatherView;
+    private APIService mApiService;
 
     public WeatherPresenterImpl(IWeatherView weatherView) {
         this.mWeatherView = weatherView;

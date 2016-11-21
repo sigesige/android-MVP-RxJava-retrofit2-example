@@ -3,10 +3,12 @@
     android:layout_height="match_parent"
     tools:context="com.hond.mvpexample.views.CityListActivity">
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cityListRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/cityListView"></ListView>
+        android:divider="#ffff0000"
+        android:dividerHeight="10dp" />
 
 
 </RelativeLayout>
